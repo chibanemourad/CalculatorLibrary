@@ -22,7 +22,7 @@ jobs:
           name: autopep8
           command: |
             . venv/bin/activate
-            autopep8 . -r --diff --exit-code
+            autopep8 --aggressive calculator.py
       # Step 4: run linter and tests
       - run:
           name: run tests
